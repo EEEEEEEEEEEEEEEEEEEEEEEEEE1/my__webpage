@@ -10,7 +10,7 @@
     <body>
         <header id="title_border">
             <h1 id="title" style="margin-top: auto;">Ke Wei's Webpage</h1>
-            <img src="Images/emm.png" style="width: 6%;">
+            <img id="myImage" src="Images/emm.png" style="width: 10%;" onclick="swapImage()">
                 <hr>
             <div id="easter_egg">
                 <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color: white;" title="DON'T TOUCH ME!!">by Ke Wei (Multicellular Organism)</a>
@@ -34,6 +34,17 @@
         <iframe src="Pages\main.html" title="main menu" id="frame" style="width: 100%; height: 11cm; border: white;"></iframe>
     </body>
 
-</html>
+    <script>
+function swapImage() {
+  const image = document.getElementById('myImage');
+  
+  if (image.src.match("Images/emm.png")) {
+    image.src = "Images/me.jpg";
+  } else {
+    image.src = "Images/emm.png";
+  }
+}
+</script>
 
+</html>
 
